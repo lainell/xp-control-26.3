@@ -54,7 +54,7 @@ public class XpScreen extends Screen {
 
         int cx = this.width / 2;
 
-        addRenderableWidget(new StringWidget(cx - 150, 10, 300, 12, this.title, this.font).alignCenter());
+        addRenderableWidget(new StringWidget(cx - 150, 10, 300, 12, this.title, this.font));
 
         // Default rule for all mobs
         addRenderableWidget(new StringWidget(cx - 150, 34, 170, 12,
@@ -86,7 +86,7 @@ public class XpScreen extends Screen {
         addRenderableWidget(Button.builder(Component.literal(">"), b -> changePage(1))
                 .bounds(cx + 110, bottom, 40, 20).build());
 
-        pageLabel = new StringWidget(cx - 100, bottom - 14, 200, 12, Component.empty(), this.font).alignCenter();
+        pageLabel = new StringWidget(cx - 40, bottom - 14, 120, 12, Component.empty(), this.font);
         addRenderableWidget(pageLabel);
 
         perPage = Math.max(1, (this.height - LIST_TOP - 44) / ROW_H);
