@@ -17,16 +17,13 @@ public class XpControlClient implements ClientModInitializer {
     public void onInitializeClient() {
         openMenuKey = KeyMappingHelper.registerKeyMapping(new KeyMapping(
                 "key.xpcontrol.open",
-                InputConstants.Type.KEYSYM,
                 InputConstants.KEY_K,
                 CATEGORY
         ));
 
         ClientTickEvents.END_CLIENT_TICK.register(client -> {
             while (openMenuKey.consumeClick()) {
-                if (client.screen == null) {
-                    client.gui.setScreen(new XpScreen());
-                }
+                client.gui.setScreen(new XpScreen());
             }
         });
     }
