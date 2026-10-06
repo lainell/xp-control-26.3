@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "id": "xpcontrol",
+  "version": "${version}",
+  "name": "XP Control",
+  "description": "Press a key to open a menu and set how much XP each mob drops.",
+  "authors": ["You"],
+  "license": "MIT",
+  "environment": "*",
+  "entrypoints": {
+    "main": ["dev.xpcontrol.XpControl"],
+    "client": ["dev.xpcontrol.client.XpControlClient"]
+  },
+  "mixins": ["xpcontrol.mixins.json"],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "minecraft": "~${minecraft_version}",
+    "java": ">=25",
+    "fabric-api": "*"
+  }
+}

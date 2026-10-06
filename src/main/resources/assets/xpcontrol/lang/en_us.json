@@ -1,0 +1,9 @@
+{
+  "key.xpcontrol.open": "Open XP Control menu",
+  "key.category.xpcontrol.main": "XP Control",
+  "xpcontrol.title": "XP per mob  (2 = double, 0 = none, =10 = exactly 10)",
+  "xpcontrol.global": "All mobs (default)",
+  "xpcontrol.search": "Search mob...",
+  "xpcontrol.done": "Done",
+  "xpcontrol.page": "Page %s / %s"
+}

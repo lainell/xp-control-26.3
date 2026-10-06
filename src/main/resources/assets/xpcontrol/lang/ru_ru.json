@@ -1,0 +1,9 @@
+{
+  "key.xpcontrol.open": "Открыть меню XP Control",
+  "key.category.xpcontrol.main": "XP Control",
+  "xpcontrol.title": "Опыт с мобов  (2 = вдвое, 0 = нет, =10 = ровно 10)",
+  "xpcontrol.global": "Все мобы (по умолчанию)",
+  "xpcontrol.search": "Поиск моба...",
+  "xpcontrol.done": "Готово",
+  "xpcontrol.page": "Страница %s / %s"
+}
